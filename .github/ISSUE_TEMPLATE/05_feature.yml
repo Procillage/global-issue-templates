@@ -1,0 +1,9 @@
+Scaffold .github/ISSUE_TEMPLATE with 4 YAML forms:
+
+01_feature_request.yml: Fields for Project (dropdown), Context, Requirements, Priority.
+
+02_bug_report.yml: Fields for Project, Device, Steps, Logs. Auto-label 'bug'.
+
+03_moonshot_idea.yml: Fields for Concept, Why Now, Impact. Auto-label 'moonshot'.
+
+04_chore_task.yml: Fields for Task, Tech Details. Auto-label 'chore'. Use lowercase filenames & professional descriptions.
