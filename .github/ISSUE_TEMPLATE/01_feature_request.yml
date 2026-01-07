@@ -1,0 +1,56 @@
+name: Feature Request
+description: Submit a feature request for a project
+title: "[Feature]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting a feature request. Please provide as much detail as possible.
+  
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Select the project this feature request is for
+      options:
+        - Project A
+        - Project B
+        - Project C
+        - Other
+    validations:
+      required: true
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide context for this feature request. What problem does it solve?
+      placeholder: Describe the context and background for this feature...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: List the specific requirements for this feature
+      placeholder: |
+        - Requirement 1
+        - Requirement 2
+        - Requirement 3
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: What is the priority level for this feature?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true

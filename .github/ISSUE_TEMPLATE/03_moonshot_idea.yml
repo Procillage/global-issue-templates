@@ -1,0 +1,36 @@
+name: Moonshot Idea
+description: Propose an ambitious, innovative idea
+title: "[Moonshot]: "
+labels: ["moonshot"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share your moonshot idea! This is for ambitious, innovative concepts that could have significant impact.
+  
+  - type: textarea
+    id: concept
+    attributes:
+      label: Concept
+      description: Describe your moonshot idea in detail
+      placeholder: What is your ambitious vision or concept?
+    validations:
+      required: true
+  
+  - type: textarea
+    id: why_now
+    attributes:
+      label: Why Now
+      description: Explain why this is the right time for this idea
+      placeholder: What makes this idea timely and relevant now?
+    validations:
+      required: true
+  
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe the potential impact of this idea
+      placeholder: What would be the impact if this idea is successfully implemented?
+    validations:
+      required: true

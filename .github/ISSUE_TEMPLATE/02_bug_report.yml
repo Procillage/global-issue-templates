@@ -1,0 +1,57 @@
+name: Bug Report
+description: Report a bug or issue
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug. Please provide detailed information to help us investigate and resolve the issue.
+  
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Select the project where the bug was found
+      options:
+        - Project A
+        - Project B
+        - Project C
+        - Other
+    validations:
+      required: true
+  
+  - type: textarea
+    id: device
+    attributes:
+      label: Device
+      description: Provide information about the device or environment where the bug occurred
+      placeholder: |
+        - OS: [e.g., Windows 11, macOS 14, Ubuntu 22.04]
+        - Browser: [e.g., Chrome 120, Firefox 121]
+        - Version: [e.g., 1.0.0]
+    validations:
+      required: true
+  
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide detailed steps to reproduce the bug
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+  
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Include any relevant logs, error messages, or screenshots
+      placeholder: Paste logs or error messages here...
+      render: shell
+    validations:
+      required: false
